@@ -3,122 +3,452 @@
 
 <head>
     <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="bootstrap/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="bootstrap/img/favicon.ico" type="image/x-icon" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-
-    <title>Alinhamento de Textos</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 
     <style>
-        *{
-            margin-left: 10px;
-            font-family: Arial, Helvetica, sans-serif;
-            
-        }
-
-        .display-4{
-            text-align: center;
+        .display-4 {
             color: purple;
         }
-
-        /* Common breakpoints are :
-        320px — 480px for mobile devices, 
-        481px — 768px for iPads & tablets, 
-        769px — 1024px for small screens like laptop, 1025px — 1200px for large screens like Desktops, and 1201px and above for extra large screens like TV. */
-
-        @media screen and (min-width:320px) and (max-width:576px) {
-            p {
-                color: blue;
-            }
-        }
-
-        @media screen and (min-width:577px) and (max-width:768px) {
-            p {
-                color: rgb(255, 0, 140);
-            }
-        }
-
-        @media screen and (min-width:769px) and (max-width:992px) {
-            p {
-                color: rgb(3, 128, 3);
-            }
-        }
-
-        @media screen and (min-width:993px) and (max-width:1900px) {
-            p {
-                color: rgb(236, 89, 3);
-            }
-        }
-
-        span {
-            background-color: blue;
-            color: white;
-            padding: 8px;
-            margin: 5px 0px;
-            border-radius: 8px;
-        }
-
-        
     </style>
+
+    <title>Tabela Bootstrap</title>
 </head>
 
 <body>
+    <h4 class="display-4 text-center">Tabela Simples</h4>
 
-    <h4 class="display-4">Alinhamento responsivo de textos com Bootstrap</h4>
+    <h3>[table class="table"]</h3>
 
-    <h5>Texto resposivo para telas small [sm] &#8925;576</h5>
-    <!-- class="text-sm-right,left,center,justify" -->
-    <p class="text-sm-right">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and</p>
+    <table class="table">
+        <thead>
+            <th>#</th>
+            <th>Produto</th>
+            <th>Marca</th>
+            <th>Preço</th>
+        </thead>
 
-    <hr>
+        <tbody>
+            <tr>
+                <td>0000001</td>
+                <td>iPhone 14</td>
+                <td>Apple</td>
+                <td>R$ 13.000,00</td>
+            </tr>
 
-    <h5>Texto resposivo para telas medium [md] &#8925;768</h5>
-    <!-- class="text-sm-right,left,center,justify" -->
-    <p class="text-md-justify">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and</p>
+            <tr>
+                <td>0000002</td>
+                <td>iPhone 13</td>
+                <td>Apple</td>
+                <td>R$ 10.000,00</td>
+            </tr>
 
-    <hr>
-
-    <h5>Texto resposivo para telas large [lg] &#8925;992</h5>
-    <!-- class="text-sm-right,left,center,justify" -->
-    <p class="text-lg-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and</p>
-
-    <hr>
-
-    <h5>Texto resposivo para telas extra-large [xl] &#8925;1200</h5>
-    <!-- class="text-sm-right,left,center,justify" -->
-    <p class="text-xl-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and</p>
-
-    <hr>
-
-    <h3>Conversão de display:block para inline <br> class="d-inline"</h3>
-
-    <h3 style="border:2px solid purple"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nemo consectetur earum maxime labore nihil asperiores quod harum provident, natus facilis cumque explicabo a eos, magni quis. Eveniet, quidem exercitationem!</h3>
-
-    <h3 style="border:2px solid purple" class="d-inline bg-warning"> Lorem ipsum dolor sit amet consectetur adipisicing elit.  </h3>
-
-    <hr>
-
-    <h3>Conversão de display:inline para block <br> class="d-block"</h3>
-
-    <span class="d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-
-    <span class="d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <tr>
+                <td>0000003</td>
+                <td>iPhone 12</td>
+                <td>Apple</td>
+                <td>R$ 8.000,00</td>
+            </tr>
+        </tbody>
 
 
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+    <!-- TABELA ESCURA-->
+
+    <h4 class="display-4 text-center">Tabela Escura</h4>
+
+    <h3>[table class="table table-dark")]</h3>
+
+    <table class="table table-dark">
+        <thead>
+            <th>#</th>
+            <th>Produto</th>
+            <th>Marca</th>
+            <th>Preço</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>0000001</td>
+                <td>iPhone 14</td>
+                <td>Apple</td>
+                <td>R$ 13.000,00</td>
+            </tr>
+
+            <tr>
+                <td>0000002</td>
+                <td>iPhone 13</td>
+                <td>Apple</td>
+                <td>R$ 10.000,00</td>
+            </tr>
+
+            <tr>
+                <td>0000003</td>
+                <td>iPhone 12</td>
+                <td>Apple</td>
+                <td>R$ 8.000,00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+    </table>
 
 
 
-                    <!-- JavaScript (Opcional) -->
-                    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-                    <script src="bootstrap/js/bootstrap.min.js">
-                    </script>
+    <!-- TABELA THEAD-DARK -->
+
+    <h4 class="display-4 text-center">Cabeçalho Thead-Dark</h4>
+
+    <h3>[table class="table table-dark")]</h3>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <th>#</th>
+            <th>Produto</th>
+            <th>Marca</th>
+            <th>Preço</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>0000001</td>
+                <td>iPhone 14</td>
+                <td>Apple</td>
+                <td>R$ 13.000,00</td>
+            </tr>
+
+            <tr>
+                <td>0000002</td>
+                <td>iPhone 13</td>
+                <td>Apple</td>
+                <td>R$ 10.000,00</td>
+            </tr>
+
+            <tr>
+                <td>0000003</td>
+                <td>iPhone 12</td>
+                <td>Apple</td>
+                <td>R$ 8.000,00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+    <!-- FORMATAÇÕES DE TABELA-->-->
+
+    <h4 class="display-4 text-center">FORMATAÇÕES</h4>
+
+    <h3>[table-bordered, table-borderless, table-striped)]</h3>
+
+    <br>
+    <h4 style="color:purple">table-striped</h4>
+    <table class="table table-striped">
+        <thead >
+            <th>#</th>
+            <th>Produto</th>
+            <th>Marca</th>
+            <th>Preço</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>0000001</td>
+                <td>iPhone 14</td>
+                <td>Apple</td>
+                <td>R$ 13.000,00</td>
+            </tr>
+
+            <tr>
+                <td>0000002</td>
+                <td>iPhone 13</td>
+                <td>Apple</td>
+                <td>R$ 10.000,00</td>
+            </tr>
+
+            <tr>
+                <td>0000003</td>
+                <td>iPhone 12</td>
+                <td>Apple</td>
+                <td>R$ 8.000,00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+    <br>
+    <h4 style="color:purple">table-borderless</h4>
+    <table class="table table-borderless">
+        <thead >
+            <th>#</th>
+            <th>Produto</th>
+            <th>Marca</th>
+            <th>Preço</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>0000001</td>
+                <td>iPhone 14</td>
+                <td>Apple</td>
+                <td>R$ 13.000,00</td>
+            </tr>
+
+            <tr>
+                <td>0000002</td>
+                <td>iPhone 13</td>
+                <td>Apple</td>
+                <td>R$ 10.000,00</td>
+            </tr>
+
+            <tr>
+                <td>0000003</td>
+                <td>iPhone 12</td>
+                <td>Apple</td>
+                <td>R$ 8.000,00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+    <br>
+    <h4 style="color:purple">table-bordered</h4>
+    <table class="table table-bordered">
+        <thead >
+            <th>#</th>
+            <th>Produto</th>
+            <th>Marca</th>
+            <th>Preço</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>0000001</td>
+                <td>iPhone 14</td>
+                <td>Apple</td>
+                <td>R$ 13.000,00</td>
+            </tr>
+
+            <tr>
+                <td>0000002</td>
+                <td>iPhone 13</td>
+                <td>Apple</td>
+                <td>R$ 10.000,00</td>
+            </tr>
+
+            <tr>
+                <td>0000003</td>
+                <td>iPhone 12</td>
+                <td>Apple</td>
+                <td>R$ 8.000,00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+    <!-- TABELAS CONSTEXTUA -->
+
+    <h4 class="display-4 text-center">FORMATAÇÕES CONTEXTUAIS</h4>
+    <h3>[tr class="table-success", "table-info" ....]</h3>
+
+    <table class="table ">
+        <thead>
+            <th>#</th>
+            <th>Produto</th>
+            <th>Marca</th>
+            <th>Preço</th>
+        </thead>
+
+        <tbody>
+            <tr class="table-success">
+                <td>0000001</td>
+                <td>iPhone 14</td>
+                <td>Apple</td>
+                <td>R$ 13.000,00</td>
+            </tr>
+
+            <tr>
+                <td>0000002</td>
+                <td>iPhone 13</td>
+                <td>Apple</td>
+                <td>R$ 10.000,00</td>
+            </tr>
+
+            <tr>
+                <td>0000003</td>
+                <td>iPhone 12</td>
+                <td>Apple</td>
+                <td>R$ 8.000,00</td>
+            </tr>
+        </tbody>
+
+
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+    <!-- TABELA RESPONSIVA -->
+
+    <h4 class="display-4 text-center">Tabela Responsiva</h4>
+    <h3>[table table-sm]</h3>
+
+    <table class="table  table-sm">
+        <thead>
+            <th>#</th>
+            <th>Produto</th>
+            <th>Marca</th>
+            <th>Preço</th>
+            <th>Descrição</th>
+        </thead>
+
+        <tbody>
+            <tr class="table-success">
+                <td>0000001</td>
+                <td>iPhone 14</td>
+                <td>Apple</td>
+                <td>R$ 13.000,00</td>
+                <td class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque incidunt aut, modi ea cum amet tenetur illum pariatur porro, fugit rem. Perspiciatis ipsa facere quam distinctio. Voluptate vero odio impedit?</td>
+            </tr>
+
+            <tr>
+                <td>0000002</td>
+                <td>iPhone 13</td>
+                <td>Apple</td>
+                <td>R$ 10.000,00</td>
+            </tr>
+
+            <tr>
+                <td>0000003</td>
+                <td>iPhone 12</td>
+                <td>Apple</td>
+                <td>R$ 8.000,00</td>
+            </tr>
+        </tbody>
+
+
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+    <!-- PAGINAÇÃO -->
+
+    <h4 class="display-4 text-center">Paginação</h4>
+    <nav aria-label="Navegação de página exemplo">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+        </ul>
+      </nav>
+
+      <!-- TAMANHO PAGINAÇÃO -->
+
+    <h4 class="display-4 text-center">Tamanho Paginação</h4>
+
+    <span>Normal</span>
+    <nav aria-label="Navegação de página exemplo">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+        </ul>
+      </nav>
+
+<span>Small</span>
+    <nav aria-label="Navegação de página exemplo">
+        <ul class="pagination pagination-sm">
+          <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+        </ul>
+      </nav>
+
+      <span>Large</span>
+      <nav aria-label="Navegação de página exemplo">
+        <ul class="pagination pagination-lg">
+          <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+        </ul>
+      </nav>
+
+      <!-- Alinhamento Paginação -->
+
+      <h4 class="display-4 text-center">Alinhamento Paginação</h4>
+
+      <span>native left</span>
+    <nav aria-label="Navegação de página exemplo">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+        </ul>
+      </nav>
+
+      <span>Center</span>
+      <nav aria-label="Navegação de página exemplo">
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+        </ul>
+      </nav>
+
+      <span>End</span>
+      <nav aria-label="Navegação de página exemplo">
+        <ul class="pagination justify-content-end">
+          <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+        </ul>
+      </nav>
+    
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
